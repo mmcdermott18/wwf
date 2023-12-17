@@ -1,0 +1,119 @@
+@font-face {
+  font-family: "wwf";
+  src: url('../assets/letters/wwf/wwf-500.otf');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "wwf";
+  src: url('../assets/letters/wwf/wwf-500i.otf');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "wwf";
+  src: url('../assets/letters/wwf/wwf-400.otf');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "wwf";
+  src: url('../assets/letters/wwf/wwf-400i.otf');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "wwf";
+  src: url('../assets/letters/wwf/wwf-300.otf');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "wwf";
+  src: url('../assets/letters/wwf/wwf-300i.otf');
+  font-weight: 300;
+  font-style: italic;
+}
+/***** base *****/
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "wwf", serif;
+  font-size: 16px;
+  color: #404040;
+}
+img {
+  max-width: 100%;
+}
+
+/***** layout *****/
+.grid {
+  margin: 0 50px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 25px;
+}
+header {
+  margin: 0 50px;
+  height: 100px;
+  padding: 25px 0;
+}
+#mark {
+  height: 50px;
+  float: left;
+  margin-right: 25px;
+}
+
+/***** hero styles *****/
+#hero {
+  position: relative;
+  margin: 0 50px 50px;
+  height: calc(100vh - 150px);
+  background: url(../assets/img/home-1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#hero .overlay {
+  position: absolute;
+  width: 100%;
+  height: calc(100vh - 150px);
+  background: rgb(100,99,99);
+  background: radial-gradient(circle, rgba(100,99,99,1) 0%, rgba(255,255,255,1) 100%);
+  mix-blend-mode: multiply;
+}
+#hero img {
+  position: absolute;
+  top: calc((100vh - 227px) / 2);
+  left: calc((100vw - 350px) / 2);
+  width: 250px;
+/*  filter: drop-shadow(0 0 1px #000000);*/
+/*  #646363*/
+}
+
+/***** nav styles *****/ 
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  float: left;
+  margin-right: 25px;
+  margin-top: 15px;
+}
+
+/***** links *****/
+a {
+  font-style: italic;
+  text-decoration: none;
+  color: #404040;
+}
+
+/***** fonts *****/
+h1 {
+  font-weight: 300;
+  font-style: italic;
+}
