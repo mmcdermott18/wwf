@@ -34,6 +34,18 @@
   font-weight: 300;
   font-style: italic;
 }
+@font-face {
+  font-family: "wwf";
+  src: url('../assets/letters/wwf/wwf-200.otf');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "wwf";
+  src: url('../assets/letters/wwf/wwf-200i.otf');
+  font-weight: 200;
+  font-style: italic;
+}
 
 /***** base *****/
 body {
@@ -104,6 +116,17 @@ header {
   left: calc((100vw - 350px) / 2);
   width: 250px;
 }
+#interior #hero, #interior #hero .overlay {
+  height: 400px
+}
+#interior #hero h1 {
+  position: absolute;
+  top: calc((400px - 60px) / 2);
+  left: 0;
+  text-align: center;
+  width: 100%;
+  color: white;
+}
 #intro {
   margin: 150px 0 75px;
 }
@@ -130,6 +153,28 @@ header {
   max-height: 500px;
   width: 100%;
   margin: -25px 0;
+}
+#page-intro {
+  margin: 75px 0;
+}
+#page-intro .text {
+  grid-column: 4 / span 6;
+}
+#page-intro .text p.big {
+  font-size: 1.6rem;
+}
+#form .image {
+  grid-column: span 6;
+  background: url(../assets/img/intro-1.png) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  margin: 0;
+}
+#form .text {
+  grid-column: span 6;
 }
 #work {
   margin: 75px 0;
@@ -288,11 +333,41 @@ p a {
   cursor: pointer;
   background: white;
 }
-
+/***** form *****/
+form {
+  margin: 0;
+  font-size: 1.2rem;
+}
+form input, form textarea {
+  width: 100%;
+  margin: 5px 0 15px;
+  border: 1px solid #404040;
+  padding: 2px 5px;
+}
+form input:focus, form textarea:focus {
+  outline: none !important;
+  border:1px solid #C3DBD1;
+  box-shadow: 0 0 10px #C3DBD1;
+}
+form input[type=submit]{
+  border: 1px solid #404040;
+  border-radius: 0;
+  font-size: 1.4rem;
+  background: none;
+  width: 25%;
+  padding: 15px 0;
+  transition: background 500ms ease;
+}
+form input[type=submit]:hover {
+  cursor: pointer;
+  background: #C3DBD1;
+}
 /***** type *****/
 h1 {
-  font-weight: 300;
+  font-size: 3rem;
+  font-weight: 200;
   font-style: italic;
+  margin: 0;
 }
 h2 {
   font-size: 4rem;
@@ -348,6 +423,12 @@ p.big {
   }
   #intro .image {
     grid-column: 6 / 8;
+  }
+  #page-intro .text {
+    grid-column: 2 / span 6;
+  }
+  #form .image, #form .text {
+    grid-column: span 4;
   }
   #work .gallery img {
     height: 400px;
@@ -417,6 +498,12 @@ p.big {
   }
   #intro .image {
     grid-column: 5 / 7;
+  }
+   #page-intro .text {
+    grid-column: 2 / span 4;
+  }
+  #form .image, #form .text {
+    grid-column: span 3;
   }
   #work .gallery img {
     height: 350px;
@@ -509,6 +596,12 @@ p.big {
     left: calc((100vw - 300px) / 2);
     width: 250px;
   }
+  #interior #hero, #interior #hero .overlay {
+    height: 200px
+  }
+  #interior #hero h1 {
+    top: calc((200px - 60px) / 2);
+  }
   #intro {
     margin: 50px 0;
   }
@@ -523,6 +616,15 @@ p.big {
     grid-column: 1 / 5;
     height: 250px;
     margin: -50px 0;
+  }
+   #page-intro .text {
+    grid-column: 1 / span 4;
+  }
+  #form .image {
+    height: 400px;
+  }
+  #form .image, #form .text {
+    grid-column: span 4;
   }
   #work {
     margin: 100px 0 75px;
