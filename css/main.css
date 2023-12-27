@@ -1,3 +1,13 @@
+/******** NOTES **********
+ * gradient overlay on mobile is weird
+ * form submit button is weird
+ * get form to work
+ * make horizontal gap between images on mobile smaller
+ * background images on mobile zoomed in
+ * clean up unused font calls
+ * nav link hover state
+*************************/
+
 @font-face {
   font-family: "wwf";
   src: url('../assets/letters/wwf/wwf-500.otf');
@@ -117,10 +127,18 @@ header {
   width: 250px;
 }
 #interior #hero.contact {
-  background: url(../assets/img/contact-2.jpg) no-repeat center center; 
+  background: url(../assets/img/contact-2.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
 }
 #interior #hero.work {
-  background: url(../assets/img/work-1.JPG) no-repeat center center; 
+  background: url(../assets/img/work-1.JPG) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
 }
 #interior #hero, #interior #hero .overlay {
   height: 400px;
