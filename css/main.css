@@ -116,8 +116,11 @@ header {
   left: calc((100vw - 350px) / 2);
   width: 250px;
 }
-#interior #hero {
+#interior #hero.contact {
   background: url(../assets/img/contact-2.jpg) no-repeat center center; 
+}
+#interior #hero.work {
+  background: url(../assets/img/work-1.JPG) no-repeat center center; 
 }
 #interior #hero, #interior #hero .overlay {
   height: 400px;
@@ -261,6 +264,14 @@ header {
 #contact .text .button {
   grid-column: 7 / 9;
 }
+#interior #gallery {
+  column-count: 3;
+  padding: 0 50px;
+  column-gap: 25px;
+}
+#interior #gallery img {
+  margin-bottom: 25px;
+}
 footer {
   margin-bottom: 50px;
   display: flex;
@@ -277,10 +288,7 @@ footer .image {
   flex-wrap: wrap;
   align-content: end;
   justify-content: right;
-  padding: 0 0 6px;
-}
-footer .image svg {
-  color: red;
+  padding: 0 0 10px;
 }
 /***** nav *****/ 
 #mark {
@@ -325,9 +333,12 @@ a, a:link, a:visited {
 p a {
   border-bottom: 1px solid #404040;
 }
-
+a.active {
+  border-bottom: 1px solid #C3DBD1;
+}
 /***** buttons *****/
 #contact button {
+  color: #404040;
   border: 1px solid #404040;
   border-radius: 0;
   font-size: 1.4rem;
@@ -351,12 +362,16 @@ form input, form textarea {
   border: 1px solid #404040;
   padding: 2px 5px;
 }
+form textarea {
+  min-height: 200px;
+}
 form input:focus, form textarea:focus {
   outline: none !important;
   border:1px solid #C3DBD1;
   box-shadow: 0 0 10px #C3DBD1;
 }
 form input[type=submit]{
+  color: #404040;
   border: 1px solid #404040;
   border-radius: 0;
   font-size: 1.4rem;
@@ -394,6 +409,9 @@ h4 {
   font-style: italic;
   margin: 0 0 5px;
 }
+p {
+  margin-bottom: 5px;
+}
 p.big {
   font-size: 2rem;
   font-style: italic;
@@ -407,6 +425,9 @@ p.big {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-gap: 25px;
+  }
+  #interior #gallery {
+    column-count: 2;
   }
   .subgrid9 {
     display: grid;
@@ -556,6 +577,7 @@ p.big {
   }
   footer .image {
     grid-column: 6 / 7;
+    padding: 0 0 5px;
   }
   h2 {
     font-size: 3rem;
@@ -576,6 +598,10 @@ p.big {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 25px;
+  }
+  #interior #gallery {
+    column-count: 1;
+    padding: 25px;
   }
   .subgrid9, .subgrid8 {
     display: grid;
@@ -644,7 +670,7 @@ p.big {
   }
   #process .text {
     grid-column: 1 / 5;
-    padding-right: 25px;
+    padding: 50px 25px 50px 0;
  }
   #process .text h2 {
     grid-column: 1;
@@ -656,7 +682,7 @@ p.big {
   #process .image {
     height: 400px;
     width: calc(100% - 25px);
-    margin-top: -100px;
+    margin-top: -50px;
     grid-column: 1 / 5;
     z-index: 2;
   }
