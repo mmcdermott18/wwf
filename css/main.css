@@ -122,6 +122,10 @@ header {
 #interior #hero, #interior #hero .overlay {
   height: 400px;
 }
+#interior #hero .overlay {
+    background: radial-gradient(circle, rgba(100,99,99,1) 0%, rgba(255,255,255,1) 50%);
+
+}
 #interior #hero h1 {
   position: absolute;
   top: calc((400px - 60px) / 2);
