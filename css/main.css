@@ -1,22 +1,7 @@
 /******** NOTES **********
- * gradient overlay on mobile is weird
- * make horizontal gap between images on mobile smaller
- * clean up unused font calls
- * nav link hover state
+ * 
 *************************/
 
-@font-face {
-  font-family: "wwf";
-  src: url('../assets/letters/wwf/wwf-500.otf');
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "wwf";
-  src: url('../assets/letters/wwf/wwf-500i.otf');
-  font-weight: 500;
-  font-style: italic;
-}
 @font-face {
   font-family: "wwf";
   src: url('../assets/letters/wwf/wwf-400.otf');
@@ -344,6 +329,10 @@ a, a:link, a:visited {
   font-style: italic;
   text-decoration: none;
   color: #404040;
+  transition: color 500ms ease;
+}
+li a:hover, li a:active, footer a:hover, footer a:active {
+  color: #C3DBD1;
 }
 p a {
   border-bottom: 1px solid #404040;
@@ -397,7 +386,7 @@ form input::-webkit-date-and-time-value {
   text-align: left;
 }
 form input[type="date"].empty {
-  color: #707070;
+  color: darkgrey;
 }
 form button {
   padding: 10px 15px;
