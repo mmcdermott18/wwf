@@ -388,11 +388,18 @@ form input:focus, form textarea:focus {
   border:1px solid #C3DBD1;
   box-shadow: 0 0 10px #C3DBD1;
 }
+form input#date {
+  width: 100%;
+}
+.empty {
+  color: #707070;
+}
 form button {
   padding: 10px 15px;
   border: 1px solid #404040;
   background: white;
   transition: background 500ms ease;
+  color: #404040;
 }
 form button:hover {
   cursor: pointer;

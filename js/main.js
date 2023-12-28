@@ -1,6 +1,7 @@
 $(document).ready(function() {
     // run function on initial page load
     slider();
+    dateColor();
     // run function on resize of the window
     $(window).resize(function() {
       // slider();
@@ -21,4 +22,15 @@ function slider() {
     centerMode: true,
     variableWidth: true,
   });
+}
+
+function dateColor() {
+  var el = document.getElementById('date');
+  el.onchange = function() {
+    if (el.value === '') {
+        el.classList.add("empty");
+    } else {
+        el.classList.remove("empty");
+    }
+}
 }
