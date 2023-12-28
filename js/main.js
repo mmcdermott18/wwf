@@ -2,6 +2,7 @@ $(document).ready(function() {
     // run function on initial page load
     slider();
     dateColor();
+    dateValue();
     // run function on resize of the window
     $(window).resize(function() {
       // slider();
@@ -32,5 +33,14 @@ function dateColor() {
     } else {
         el.classList.remove("empty");
     }
+  }
 }
-}
+
+function dateValue() {
+  var now = new Date();
+  var day = ("0" + now.getDate()).slice(-2);
+  var month = ("0" + (now.getMonth() + 1)).slice(-2);
+  var today = now.getFullYear()+"-"+(month)+"-"+(day) ;
+  $('#date').val(today);
+  console.log( $('#date').val() );
+};
