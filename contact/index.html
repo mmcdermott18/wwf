@@ -5,6 +5,7 @@
   <title>Wild Wish Florals</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="" />
+  <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
   <link href="https://cdn.jsdelivr.net/npm/modern-normalize@v2.0.0/modern-normalize.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="../assets/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="../assets/slick/slick-theme.css"/>
@@ -39,32 +40,26 @@
     <section id="form" class="grid">
       <div class="image"></div>
       <div class="text">
-           <!-- Make sure you don't change the form action-->
-        <form action="https://api.staticforms.xyz/submit" method="post">
-            <!-- Replace with accesKey sent to your email -->
-            <input type="hidden" name="accessKey" value="e44fc5d0-0b52-4cb1-9f79-fefc3800d89c"> <!-- Required -->
-            <input type="hidden" name="subject" value="New Inquiry">
-            <label>First Name</label>
-            <input type="text" name="$firstName">
-            <label>Last Name</label>
-            <input type="text" name="$lastName">
-            <label>Email Address</label>
-            <input type="email" name="email">
-            <label>Phone Number</label>
-            <input type="number" name="phone">
-            <label>Event Type</label>
-            <input type="text" name="$eventType">
-            <label>Event Date</label>
-            <input type="text" name="$eventDate">
-            <label>Event Location</label>
-            <input type="text" name="$eventDate">
+        <form action="https://submit-form.com/nz7miqyiP" method="post">
+            <label for="name" class="required">Name</label>
+            <input type="text" id="name" name="name" placeholder="First and Last Name" required="" />
+            <label for="email" class="required">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="example@example.com" required="" />
+            <label for="phone" class="required">Phone Number</label>
+            <input type="number" id="phone" name="phone" placeholder="555-555-5555" required="">
+            <label for="type" class="required">Event Type</label>
+            <input type="text" id="type" name="type" placeholder="Wedding" required="">
+            <label for="date" class="required">Event Date</label>
+            <input type="text" id="date" name="date" placeholder="7/27/24" required="">
+            <label for="location" class="required">Event Venue</label>
+            <input type="text" id="venue" name="venue" placeholder="Venue Name" required="">
             <label>Notes</label>
-            <textarea name="$notes"></textarea>
-            <!-- If we receive data in this field submission will be ignored -->
-            <input type="text" name="honeypot" style="display: none;">
-            <!-- If you want form to redirect to a specific url after submission -->
-            <input type="hidden" name="redirectTo" value="https://example.com/contact/success"> <!-- Optional -->
-            <input type="submit" value="Submit" />
+            <textarea id="notes" name="notes" placeholder="Any additional details you think will be helpful."></textarea>
+            <input type="hidden" name="_redirect" value="https://wildwishflorals.com/">
+            <input type="hidden" name="_append" value="false" />
+            <input type="hidden" name="_email.subject" value="New Inquiry!" />
+            <button type="submit">Submit</button>
+            <!-- <div class="h-captcha" data-sitekey="6d078dbc-9095-4561-831f-c76221ceab06"></div> -->
         </form>
       </div>
     </section>
@@ -72,7 +67,7 @@
   <hr>
   <footer class="grid">
     <div class="text">
-      <p>wild wish florals</p>
+      <p>© 2024 wild wish florals</p>
       <p><a href="mailto:hello@wildwishflorals.com">hello at wildwishflorals.com</a></p>
       <p>full service floral design in virginia beach, va</p>
     </div>

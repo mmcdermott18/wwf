@@ -388,19 +388,20 @@ form input:focus, form textarea:focus {
   border:1px solid #C3DBD1;
   box-shadow: 0 0 10px #C3DBD1;
 }
-form input[type=submit]{
-  color: #404040;
+form button {
+  padding: 10px 15px;
   border: 1px solid #404040;
-  border-radius: 0;
-  font-size: 1.4rem;
-  background: none;
-  width: 25%;
-  padding: 15px 0;
+  background: white;
   transition: background 500ms ease;
 }
-form input[type=submit]:hover {
+form button:hover {
   cursor: pointer;
+  border: 1px solid #404040;
   background: #C3DBD1;
+}
+label.required:after {
+  content: "*";
+  color: tomato;
 }
 /***** type *****/
 h1 {
