@@ -396,7 +396,7 @@ form input[type="date"] {
 form input::-webkit-date-and-time-value {
   text-align: left;
 }
-.empty {
+form input[type="date"].empty {
   color: #707070;
 }
 form button {
@@ -405,7 +405,7 @@ form button {
   background: white;
   transition: background 500ms ease;
   color: #404040;
-  font-weight: 300;
+  font-weight: 400;
 }
 form button:hover {
   cursor: pointer;
