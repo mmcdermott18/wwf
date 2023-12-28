@@ -1,9 +1,8 @@
 /******** NOTES **********
  * gradient overlay on mobile is weird
  * form submit button is weird
- * get form to work
+ * event date on mobile
  * make horizontal gap between images on mobile smaller
- * background images on mobile zoomed in
  * clean up unused font calls
  * nav link hover state
 *************************/
@@ -388,8 +387,9 @@ form input:focus, form textarea:focus {
   border:1px solid #C3DBD1;
   box-shadow: 0 0 10px #C3DBD1;
 }
-form input#date {
+form input[type="date"] {
   width: 100%;
+  -webkit-appearance: none;
 }
 .empty {
   color: #707070;
