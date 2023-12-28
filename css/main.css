@@ -1,7 +1,5 @@
 /******** NOTES **********
  * gradient overlay on mobile is weird
- * form submit button is weird
- * event date on mobile
  * make horizontal gap between images on mobile smaller
  * clean up unused font calls
  * nav link hover state
@@ -662,6 +660,9 @@ p.big {
   }
   #interior #hero, #interior #hero .overlay {
     height: 200px
+  }
+  #interior #hero .overlay {
+    background: radial-gradient(circle, rgba(150,150,150,1) 0%, rgba(255,255,255,1) 100%);
   }
   #interior #hero h1 {
     top: calc((200px - 60px) / 2);
