@@ -1,5 +1,5 @@
 /******** NOTES **********
- * 
+ * fix safari date picker numbers
 *************************/
 
 @font-face {
@@ -382,10 +382,21 @@ form input[type="date"] {
   text-align: left;
   height: 30px;
 }
-form input::-webkit-date-and-time-value {
+form input::-webkit-date-and-time-value, 
+form input::-webkit-datetime-edit-year-field, 
+form input::-webkit-datetime-edit-month-field, 
+form input::-webkit-datetime-edit-day-field, 
+form input::-webkit-datetime-edit-hour-field, 
+form input::-webkit-datetime-edit-minute-field, 
+form input::-webkit-datetime-edit-second-field, 
+form input::-webkit-datetime-edit-millisecond-field, 
+form input::-webkit-datetime-edit-meridiem-field {
   text-align: left;
+  font-variant-numeric: normal;
+  font-variant-alternates: normal;
+  font-feature-settings: "ss01";
 }
-form input[type="date"].empty {
+form input[type="date"].empty, ::placeholder {
   color: darkgrey;
 }
 form button {
