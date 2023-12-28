@@ -404,6 +404,7 @@ form button {
   background: white;
   transition: background 500ms ease;
   color: #404040;
+  font-weight: 300;
 }
 form button:hover {
   cursor: pointer;
