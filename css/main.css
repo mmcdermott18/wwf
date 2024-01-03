@@ -387,6 +387,7 @@ form input[type="date"] {
 }
 form input[type="date"].empty, ::placeholder {
   color: darkgrey;
+  opacity: .8;
 }
 form button {
   padding: 10px 15px;
