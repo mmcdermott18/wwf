@@ -359,6 +359,9 @@ a.active {
 form {
   margin: 0;
   font-size: 1.2rem;
+  font-family: "adelle", serif;
+  font-weight: 100;
+  font-style: normal;
 }
 form input, form textarea {
   width: 100%;
@@ -381,20 +384,6 @@ form input[type="date"] {
   color: #404040;
   text-align: left;
   height: 30px;
-}
-form input::-webkit-date-and-time-value, 
-form input::-webkit-datetime-edit-year-field, 
-form input::-webkit-datetime-edit-month-field, 
-form input::-webkit-datetime-edit-day-field, 
-form input::-webkit-datetime-edit-hour-field, 
-form input::-webkit-datetime-edit-minute-field, 
-form input::-webkit-datetime-edit-second-field, 
-form input::-webkit-datetime-edit-millisecond-field, 
-form input::-webkit-datetime-edit-meridiem-field {
-  text-align: left;
-  font-variant-numeric: normal;
-  font-variant-alternates: normal;
-  font-feature-settings: "ss01";
 }
 form input[type="date"].empty, ::placeholder {
   color: darkgrey;
