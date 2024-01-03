@@ -359,9 +359,6 @@ a.active {
 form {
   margin: 0;
   font-size: 1.2rem;
-  font-family: "adelle", serif;
-  font-weight: 100;
-  font-style: normal;
 }
 form input, form textarea {
   width: 100%;
@@ -388,6 +385,10 @@ form input[type="date"] {
 form input[type="date"].empty, ::placeholder {
   color: darkgrey;
   opacity: .8;
+  font-variant-numeric: tabular-nums;
+  -moz-font-feature-settings: "tnum";
+  -webkit-font-feature-settings: "tnum";
+  font-feature-settings: "tnum";
 }
 form button {
   padding: 10px 15px;
