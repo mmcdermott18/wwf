@@ -382,7 +382,7 @@ form input[type="date"] {
   text-align: left;
   height: 30px;
 }
-form input[type="date"].empty, ::placeholder {
+form input[type="date"].empty, form input[type="date"], ::placeholder {
   color: darkgrey;
   opacity: .8;
   font-variant-numeric: tabular-nums;
